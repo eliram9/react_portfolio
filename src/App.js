@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 
 class App extends Component {
+    state = {dispalyBio: false}
+    /*
     // like a builder, it's a method that allows us to define the App properties.
     constructor() {
         super();
@@ -11,10 +13,11 @@ class App extends Component {
         this.toggleDispalyBio = this.toggleDispalyBio.bind(this)
     }
 
+    */    
     // toggleDispalyBio is a method, when the user click more text will appear/disappear.
     // means, it will set the state to its oppsite value.
     // again, the input must be writtwn as a object
-    toggleDispalyBio() {
+    toggleDispalyBio = () => {
         this.setState({ dispalyBio: !this.state.dispalyBio });
     }
 
