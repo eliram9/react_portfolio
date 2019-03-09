@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Projects from './Projects';
 
 
 class App extends Component {
@@ -22,26 +23,27 @@ class App extends Component {
     }
 
     render() {
-        // let's write a ternary expression, 
-        // the "?" will start the expression and the first value will be the true case 
-        //  the ":" means if not (false) --> if(this.state.dispalyBio === false) do not show the content of {bio}
-        const bio = this.state.dispalyBio ? (
-                <div>
-                    <p>Located in D.C. metro area. I code every day!</p>
-                    <p>My favorite framewotkrk is React.JS</p>
-                    <button onClick={this.toggleDispalyBio}>Show less</button>
-                </div>
-                ) : (
-                    <div>
-                        <button onClick={this.toggleDispalyBio}>Read more</button>
-                    </div>
-                )
-    
+
         return (
             <div>
                 <h1>Hello!</h1>
                 <p>My name is Eliram, I'm a developer</p>
-                { bio }
+                {
+                // let's write a ternary expression, 
+                // the "?" will start the expression and the first value will be the true case 
+                //  the ":" means if not (false) --> if(this.state.dispalyBio === false) do not show the content of {bio}
+                this.state.dispalyBio ? (
+                        <div>
+                            <p>Located in D.C. metro area. I code every day!</p>
+                            <p>My favorite framewotkrk is React.JS</p>
+                            <button onClick={this.toggleDispalyBio}>Show less</button>
+                        </div>
+                        ) : (
+                            <div>
+                                <button onClick={this.toggleDispalyBio}>Read more</button>
+                            </div>
+                        )
+                }
             </div>
         )
     }
