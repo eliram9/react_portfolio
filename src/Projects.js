@@ -1,6 +1,25 @@
 import React, { Component } from 'react';
 import PROJECTS from './data/projects';
 
+// this will our pareent component to pass down data
+class Project extends Component {
+    render() {
+        console.log('this.props', this.props);
+
+        const { title, image, description, link } = this.props.project;
+
+        return (
+           <div style={{ display: 'inline-block', width: 250, margin:10 }}>
+                <h3>{ title }</h3>
+                <img src={ image } alt='profile' style={{ width:100, height:100 }}/>
+                <p>{ description }</p>
+                <a href={ link }>{link}</a>
+           </div> 
+        )
+    }
+}
+
+
 class Projects extends Component {
     render() {
         return (
@@ -19,7 +38,7 @@ class Projects extends Component {
                     {
                         PROJECTS.map(PROJECT => {
                             return(
-                                <div key={PROJECT.id}>{PROJECT.title}</div>
+                                <Project key={PROJECT.id} project={PROJECT} />
                             );
                         })  
                     }

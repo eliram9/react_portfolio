@@ -16,7 +16,7 @@ const PROJECTS = [
     {
         id: 2,
         title: 'QuickestWay',
-        description: 'Web Application for the quickest route comparing between Bing, Google and MapQuest GPS on one page',
+        description: 'Find the quickest route comparing between Bing, Google and MapQuest.',
         link: 'https://eliram9.github.io/QuickestWay/',
         image: navi
     }
