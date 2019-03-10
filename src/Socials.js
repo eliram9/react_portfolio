@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SOCIALS from './data/socialProfiles';
+import { readSync } from 'fs';
 
 // SocialProfile component 
 class SocialProfile extends Component {

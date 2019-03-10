@@ -14,7 +14,7 @@ const SOCIALS = [
     },
     {
         id: 2,
-        link: 'https://eliram9.github.io/react_portfolio/',
+        link: 'https://eliram9.github.io/',
         image: git
 
     },
