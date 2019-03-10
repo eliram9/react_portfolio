@@ -1,27 +1,33 @@
 // importing projects images
-import git from '../assets/git';
-import insta from '../assets/insta';
-import linked from '../assets/linked';
+import gmail from '../assets/gmail.png';
+import git from '../assets/git.png';
+import insta from '../assets/insta.png';
+import linked from '../assets/linked.png';
 
 // we will craete an array for all the social profiles we want to display
 // SOCIAL - written in SCREAM syntax: a convention for global values in JS.
-const SOCIAL = [
+const SOCIALS = [
     {
         id: 1,
+        link: 'mailto:eliram9@gmail.com/',
+        image: gmail
+    },
+    {
+        id: 2,
         link: 'https://eliram9.github.io/react_portfolio/',
         image: git
 
     },
     {
-        id: 2,
+        id: 3,
         link: 'https://www.instagram.com/eliramalachi/?hl=en',
         image: insta
     },
     {
-        id: 3,
+        id: 4,
         link: 'https://www.linkedin.com/in/eliram9/',
         image:linked
     }
 ];
 
-export default SOCIAL;
+export default SOCIALS;
