@@ -13,7 +13,7 @@ class Project extends Component {
                 <h3>{ title }</h3>
                 <img src={ image } alt='profile' style={{ width:100, height:100 }}/>
                 <p>{ description }</p>
-                <a href={ link }>{link}</a>
+                <a href={ link }>Live App</a>
            </div> 
         )
     }
