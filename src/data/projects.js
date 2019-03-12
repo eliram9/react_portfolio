@@ -4,6 +4,7 @@ import navi from '../assets/navi.png';
 
 // we will craete an array for all the projects we want to display
 // PROJECTS - written in SCREAM syntax: a convention for global values in JS.
+// --data stored component--
 const PROJECTS = [
     // every project will "stored" every project as an object  
     {

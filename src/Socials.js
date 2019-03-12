@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SOCIALS from './data/socialProfiles';
 import { readSync } from 'fs';
 
-// SocialProfile component 
+// this SocialProfile component (child component of SocialProfiles component) to pass down data.
 class SocialProfile extends Component {
     render() {
         const { link, image } = this.props.socialProfile;

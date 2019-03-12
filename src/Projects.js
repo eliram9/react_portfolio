@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PROJECTS from './data/projects';
 
-// this Project component to pass down data
+
 class Project extends Component {
     render() {
         console.log('this.props', this.props);
