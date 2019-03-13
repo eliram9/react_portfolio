@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
 import Socials from './Socials';
+import user from './assets/user.png';
 
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
 
         return (
             <div>
+                <img src={user} style={{width: 80, height: 80, marginBottom: -20}}/>
                 <h1>Hello!</h1>
                 <p>My name is Eliram, I'm a developer</p>
                 {
