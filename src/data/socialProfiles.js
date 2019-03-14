@@ -14,7 +14,7 @@ const SOCIALS = [
     },
     {
         id: 2,
-        link: 'https://eliram9.github.io/',
+        link: 'https://eliram9.github.io/PF/',
         image: git
 
     },
