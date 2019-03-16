@@ -5,12 +5,15 @@
   "homepage": "http://eliram9.github.io/react_portfolio",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "live-server": "^1.2.1",
     "parcel-bundler": "^1.12.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
   "scripts": {
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "start": "npm run build && live-server dist"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
