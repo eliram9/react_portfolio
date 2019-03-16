@@ -4,29 +4,16 @@
   "private": true,
   "homepage": "http://eliram9.github.io/react_portfolio",
   "dependencies": {
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-materialize": "^2.6.0",
-    "react-scripts": "2.1.5"
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "parcel-bundler": "^1.12.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "parcel src/index.html"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "@babel/core": "^7.3.4",
+    "babel-preset-env": "^1.7.0"
   }
 }
