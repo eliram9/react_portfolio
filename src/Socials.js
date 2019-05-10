@@ -23,12 +23,12 @@ class SocialProfiles extends Component {
    render() {
        return (
             <div> 
-                <h2>Connect with me</h2>
+                <h4>Connect with me</h4>
                     {/* a div for all socila profiles.*/}
                     <div>
                         {
                             // we will map function the Social array to create a new array of JSX.
-                            // inside of the finction we have a call back with one parameter at a time SOCIAL object from SOCIALS array
+                            // inside of the function we have a call back with one parameter at a time SOCIAL object from SOCIALS array
                             SOCIALS.map(SOCIAL => {
                                 //then, for each object we will return SocialProfile component.
                                 // and passing down the socialProfile object as data through props (socialProfile), that is equal to the object (SOCIAL) itself.

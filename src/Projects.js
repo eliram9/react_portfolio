@@ -10,7 +10,7 @@ class Project extends Component {
 
         return (
            <div style={{ display: 'inline-block', width: 250, margin:10 }}>
-                <h3>{ title }</h3>
+                <h4>{ title }</h4>
                 <img src={ image } alt='profile' style={{ width:100, height:100 }}/>
                 <p>{ description }</p>
                 <a href={ link }>Live App</a>
