@@ -28,6 +28,7 @@ class App extends Component {
 
         return (
             <div>
+                <Welcome />
                 <img src={user} style={{width: 80, height: 80, marginBottom: -20}}/>
                 <h1>Hello!</h1>
                 <p>My name is Eliram, I'm a developer</p>
